@@ -24,7 +24,13 @@ class DatabaseSeeder extends Seeder
         \App\Models\User::create([
             'name' => 'Jhun Norman Alonzo',
             'email' => 'alonzojhunnorman@gmail.com',
-            'password' => bcrypt('admin123')
+            'password' => bcrypt('admin123'),
+            'mobile_number' => '09361246825',
+            'department_id' => '3',
+            'role_id' => '3',
+            'designation' => 'Programmer',
+            'start_from' => '2023-01-10',
+            'image' => 'default.png'
         ]);
     }
 }
